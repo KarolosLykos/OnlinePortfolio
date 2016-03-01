@@ -418,6 +418,110 @@ hr {
     }
 }
 
+/* INTRO-BlOG
+   ================================================== */
+.bg-intro2 {
+    color: #FFF;
+    background-image: url(../images/undercons.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size*/
+    -moz-background-size: cover;
+    background-size: cover;
+}
+
+.bg-intro2 .row {
+    padding-top: 242px;
+    padding-bottom: 150px;
+}
+
+.layer-intro2 {
+    background-color:rgb(34,49,63);
+    /* IE 8 OPACITY */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    background-color: rgba(0,0,0,.9);
+}
+
+.bg-intro2 h1 {
+    position:relative;
+    top:0px;
+    font-size: 46px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    line-height: 66px;
+    -webkit-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        top:1000px;
+    }
+
+    60% {
+        opacity: 1;
+        top:-30px;
+    }
+
+    80% {
+        top:10px;
+    }
+
+    100% {
+        top:0px;
+    }
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        top:1000px;
+    }
+
+    60% {
+        opacity: 1;
+        top:-30px;
+    }
+
+    80% {
+        top:10px;
+    }
+
+    100% {
+        top:0px;
+    }
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #000;
+    margin: 0 auto;
+}
+
+@media (max-width:767px) { 
+
+    .bg-intro2 h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .bg-intro2 .row {
+        padding-top: 105px;
+        padding-bottom: 65px;
+    }
+}
 /* PORTFOLIO
    ================================================== */
 .row-portfolio {
@@ -482,6 +586,7 @@ hr {
     background-color: rgba(0,0,0,.9);
     padding-top: 130px;
     padding-bottom: 130px;
+
 }
 
 .bg-skills h2 {
@@ -523,7 +628,9 @@ hr {
 
 .bg-semester {
     background-color: #2D3E3C;
-
+    background-image: url(../images/programbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     padding-top: 0;
     padding-bottom: 50px;
 }
@@ -570,6 +677,7 @@ hr {
 .bg-services {
     padding-top: 0;
     padding-bottom: 130px;
+    
 }
 
 .bg-services h3 {
