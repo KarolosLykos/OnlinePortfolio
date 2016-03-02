@@ -779,6 +779,70 @@ hr {
     }
 }
 
+/* THESIS
+   ================================================== */
+.bg-thesis {
+    background-color: #222;
+    color: #FFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: #FFF;
+    background-image: url(../images/backgroundmail.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size*/
+    -moz-background-size: cover;
+    background-size: cover;
+
+}
+
+.bg-thesis .glyphicon-envelope {
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+.bg-thesis .mail {
+    color: #098;
+    background-color: #222;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 30px;
+    border: solid 2px #000;
+    border-radius: 4px;
+    margin: 0;
+    display: inline-block;
+}
+
+.bg-thesis h3 {
+    margin-top: 16px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.bg-thesis .mail:hover {
+    background-color: #FFF;
+    color: #000;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -o-transition: all .1s linear;
+    transition: all .1s linear;
+}
+
+@media (max-width:767px) {
+ 
+    .bg-thesis h3 {
+        display: block;
+        margin: 0;
+        margin-bottom: 32px;
+    }
+
+    .bg-thesis .mail {
+        margin: 0;
+    }
+}
+
 /* FOOTER
    ================================================== */
 .bg-footer {
@@ -1309,3 +1373,12 @@ border: 1px solid #111;
 
 .btn-inverse.active {
   color: rgba(255, 255, 255, 0.75);
+
+}
+.modal-header {
+  background-image: url(../images/undercons.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size*/
+    -moz-background-size: cover;
+    background-size: cover;
