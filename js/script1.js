@@ -11,16 +11,37 @@ $(function(){
         maxSpeedX: 0.7,
         minSpeedY: 0.1,
         maxSpeedY: 0.7,
-        directionX: 'center', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+        directionX: 'left', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
         directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
         density: 10000, // How many particles will be generated: one particle every n pixels
         dotColor: '#eee',
-        lineColor: '#eee',
+        lineColor: '#085',
         particleRadius: 7, // Dot size
         lineWidth: 1,
-        curvedLines: true,
-        proximity: 100, // How close two dots need to be before they join
-        parallax: false
+        curvedLines: false,
+        proximity: 155, // How close two dots need to be before they join
+        parallax: true
+    });
+
+});
+
+$(function(){
+            
+    $('#particles2').particleground({
+        minSpeedX: 0.1,
+        maxSpeedX: 0.7,
+        minSpeedY: 0.1,
+        maxSpeedY: 0.7,
+        directionX: 'left', // 'center', 'left' or 'right'. 'center' = dots bounce off edges
+        directionY: 'center', // 'center', 'up' or 'down'. 'center' = dots bounce off edges
+        density: 10000, // How many particles will be generated: one particle every n pixels
+        dotColor: '#eee',
+        lineColor: '#085',
+        particleRadius: 7, // Dot size
+        lineWidth: 1,
+        curvedLines: false,
+        proximity: 155, // How close two dots need to be before they join
+        parallax: true
     });
 
 });
@@ -63,12 +84,6 @@ function htmlbodyHeightUpdate(){
 
 /*navbar*/
 $(function () {
-    /* START OF DEMO JS - NOT NEEDED */
-    if (window.location == window.parent.location) {
-        $('#fullscreen').html('<span class="glyphicon glyphicon-resize-small"></span>');
-        $('#fullscreen').attr('href', 'http://bootsnipp.com/mouse0270/snippets/PbDb5');
-        $('#fullscreen').attr('title', 'Back To Bootsnipp');
-    }    
     $('#fullscreen').on('click', function(event) {
         event.preventDefault();
         window.parent.location =  $('#fullscreen').attr('href');
