@@ -11,10 +11,11 @@
     <title>Karolos Lykos | Portfolio</title>
     <!-- CSS -->
     <!--===============================================================-->
+    <link href="css/theme.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/theme.css" rel="stylesheet">
+    
     <link href="css/magnific-popup.css" rel="stylesheet">
     <!-- in your header -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
@@ -27,6 +28,9 @@
     <![endif]-->
   </head>
   <body>
+  <div id="preloader">
+    <div id="status"></div>
+</div>
 
   <!-- NAVBAR-->
   <!--===============================================================-->
@@ -622,6 +626,16 @@
     <script src="js/script.js"></script>
     <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
+    <script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').delay(1400).fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(1400).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+            $('navbar navbar-default navbar-fixed-top').delay(350).css({'overflow':'visible'});
+        })
+    //]]>
+</script>
     
 </body>
 </html>

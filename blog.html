@@ -17,8 +17,8 @@
     <link href="css/theme.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <!-- in your header -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-<link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link href="css/custom.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -27,6 +27,11 @@
     <![endif]-->
   </head>
   <body>
+
+  <!-- Preloader -->
+<div id="preloader">
+    <div id="status"></div>
+</div>
 
   <!-- NAVBAR-->
   <!--===============================================================-->
@@ -131,6 +136,16 @@
     <script src="js/script.js"></script>
         <script type='text/javascript' src='js/jquery.ba-hashchange.min.js'></script>
     <script type='text/javascript' src='js/dynamicpage.js'></script>
-    
+    <!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).load(function() { // makes sure the whole site is loaded
+            $('#status').delay(1400).fadeOut(); // will first fade out the loading animation
+            $('#preloader').delay(1400).fadeOut('slow'); // will fade out the white DIV that covers the website.
+            $('body').delay(350).css({'overflow':'visible'});
+
+        })
+    //]]>
+</script>
 </body>
 </html>
